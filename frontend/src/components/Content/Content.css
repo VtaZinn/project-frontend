@@ -1,0 +1,13 @@
+.content {
+  color: black;
+  height: 664px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.content-text {
+  max-width: 600px;
+  top: 0;
+}
