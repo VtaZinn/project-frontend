@@ -1,0 +1,27 @@
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.Footer-title{
+  color: #B6BCBF;
+  margin-left: 100px;
+}
+
+.Footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-right: 100px;
+}
+
+.Footer-menu p{
+  color: black;
+}
+
+.Footer-menu_github{
+  width: 24px;
+  height: 24px;
+}
