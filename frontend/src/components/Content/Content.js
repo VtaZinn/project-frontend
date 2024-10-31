@@ -5,7 +5,7 @@ function Content() {
   return(
     <>
       <div className='content'>
-        <img src={Girl} alt="Garota meditando" />
+        <img src={Girl} alt="Garota meditando" className='girl'/>
         <div className='content-text'>
           <h1>Sobre o autor</h1>
           <p>Esse bloco descreve o autor do projeto. Aqui você deve indicar seu nome, o que você faz e quais tecnologias de desenvolvedor você conhece</p>

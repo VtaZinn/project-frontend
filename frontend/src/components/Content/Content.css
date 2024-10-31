@@ -11,3 +11,13 @@
   max-width: 600px;
   top: 0;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .girl {
+    width: 50%;
+  }
+
+  .content-text {
+    font-size: 15px;
+  }
+}
