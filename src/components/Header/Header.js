@@ -55,6 +55,7 @@ function Header(props){
 
   useEffect(()=>{
     handleSearch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
 
   const handleSubscribe = () => {
@@ -99,7 +100,7 @@ function Header(props){
           </div>
           <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
             <ul className='nav-menu_itens'>
-              <li><a href="#">Home</a></li>
+              <li><a href="/">Home</a></li>
               <button className='button-enter button-enter_mobile' onClick={openModal}>Entrar</button>
             </ul>
           </nav>
@@ -136,7 +137,7 @@ function Header(props){
                 Entrar
               </button>
               <p className='modal-content_signup'>
-                ou <a href='#' onClick={(e) => { e.preventDefault(); openModalSubscribe();  closeModal();}}>Inscreva-se</a>
+                ou <span onClick={(e) => { e.preventDefault(); openModalSubscribe();  closeModal();}}>Inscreva-se</span>
               </p>
             </div>
           </div>
@@ -161,7 +162,7 @@ function Header(props){
                 Entrar
               </button>
               <p className='modal-content_signup'>
-                ja possui uma conta? <a href='#' onClick={(e) => {e.preventDefault(); openModal(); closeModalSubscribe();}}>Faça login.</a>
+                ja possui uma conta? <span onClick={(e) => {e.preventDefault(); openModal(); closeModalSubscribe();}}>Faça login.</span>
               </p>
             </div>
           </div>

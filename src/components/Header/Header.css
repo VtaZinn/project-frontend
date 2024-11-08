@@ -304,12 +304,10 @@ body {
 .modal-content_signup {
   text-align: center;
   margin-top: 20px;
-}
-
-.modal-content_signup a{
-  text-decoration: none;
+  text-decoration: underline;
   color:#2F71E5;;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .header-menu_mobile  {
