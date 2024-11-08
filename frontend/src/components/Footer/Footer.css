@@ -5,7 +5,7 @@
 }
 
 .Footer-title{
-  color: #B6BCBF;
+  color: #999da0;
   margin-left: 100px;
 }
 
@@ -24,4 +24,53 @@
 .Footer-menu_github{
   width: 24px;
   height: 24px;
+}
+
+.Footer-mobile {
+  display: none;
+}
+
+
+@media (max-width: 320px) {
+  .Footer {
+    display: none;
+  }
+
+  .Footer-mobile {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    
+  }
+
+  .content-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    margin: auto;
+  }
+
+  .footer-social {
+    width: 82px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Footer-menu_github-mobile {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-text {
+    color: black;
+  }
+
+  .Footer-title-mobile {
+    color: #B6BCBF;
+    width: 288px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+  }
 }

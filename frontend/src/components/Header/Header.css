@@ -8,10 +8,9 @@ h1 {
 }
 
 .header {
-  background-image: url('../../images/backgroundHeader.png');
-  background-size: 100%;
+  background-image: url('../../images/esportes.png');
+  background-size: cover;
   background-position: center;
-  height: 576px;
   background-repeat: no-repeat;
 }
 
@@ -88,7 +87,7 @@ h1 {
 
 .content-header_button input{
   width: 100%;
-  height: 25px;
+  height: 65px;
   border: none;
   border-radius: 100px;
   z-index: 1;
@@ -144,8 +143,8 @@ h1 {
 
 .close-button {
   position: absolute;
-  top: 25%;
-  right: 36%;
+  top: 20px;
+  right: 20px;
   background-color: #333;
   color: white;
   border: none;
@@ -175,10 +174,15 @@ h1 {
   align-items: center;
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative
 }
 
 .modal-content_inputs {
   width: 90%;
+}
+
+.modal-content_inputs p{
+  
 }
 
 .modal-content h2 {
@@ -231,17 +235,89 @@ h1 {
   height: 500px;
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
-  .header {
-    background-size: 1000px;
-  }
+
+/* MENU HAMBURGUER */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .header {
-    background-size: 1000px;
-  }
+body {
+  font-family: Arial, sans-serif;
+}
 
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.hamburger {
+  display: none; /* Ocultando por padrão */
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 12px;
+}
+
+.hamburger .line {
+  height: 4px;
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu_itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-enter_mobile {
+  width: 288px;
+}
+
+.nav-menu ul li {
+  padding: 10px;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.modal-content_signup {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modal-content_signup a{
+  text-decoration: none;
+  color:#2F71E5;;
+  font-weight: bold;
+}
+
+.header-menu_mobile  {
+  display: none;
+}
+
+
+@media (min-width: 500px) and (max-width: 768px) {
   .header-menu h1 {
     margin-left: 50px;
     font-size: 20px;
@@ -267,5 +343,106 @@ h1 {
   .content-header_button button {
     right: 25px;
   }
+}
+
+@media (max-width: 500px) {
+  .header-menu_mobile {
+    display: block;
+  }
+
+  .hamburger {
+    display: flex; /* Exibe o ícone hamburger */
+}
+
+  .header-menu {
+    display: none;
+  }
+
+  .content-header_title h1{
+    max-width: 285px;
+    font-size: 36px;
+  }
+
+  .content-header_title p {
+    max-width: 288px;
+    font-size: 18px;
+  }
+
+  .content-header_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .content-header_button input{
+    width: 92%;
+    height: 56px;
+  }
+
+  .content-header_button button {
+    position: unset;
+    width: 95%;
+    height: 56px;
+    margin-top: 16px;
+  }
+
+  .header-menu_mobile {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  .header-menu_mobile-background {
+    background-color: #1A1B22;
+  }
+
+  .header-menu_mobile h1{
+    font-size: 16px;
+  }
+
+  .nav-menu {
+    display: none; /* Inicialmente o menu está oculto */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #1A1B22;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-menu.active {
+    display: flex; /* Quando a classe 'active' for adicionada, o menu será exibido */
+    margin-top: -4px;
+}
+
+.nav-menu ul {
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+}
+
+.nav-menu ul li {
+    text-align: center;
+    width: 100%;
+}
+
+.modal-content {
+  width: 100%;
+}
+
+.modal-content_inputs p {
+  margin-top: 20px;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.submit-button {
+  width: 100%;
+}
 }
 

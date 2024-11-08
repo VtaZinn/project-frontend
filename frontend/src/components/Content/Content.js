@@ -1,15 +1,19 @@
 import '../Content/Content.css'
-import Girl from '../../images/girl.png'
+import Basquete from '../../images/basquete.jpg'
 
 function Content() {
   return(
     <>
       <div className='content'>
-        <img src={Girl} alt="Garota meditando" className='girl'/>
-        <div className='content-text'>
-          <h1>Sobre o autor</h1>
-          <p>Esse bloco descreve o autor do projeto. Aqui você deve indicar seu nome, o que você faz e quais tecnologias de desenvolvedor você conhece</p>
-          <p>Você também pode falar sobre sua experiência com o Practicum, o que aprendeu lá e como pode ajudar clientes em potencial.</p>
+        <div className='content-description'>
+          <img src={Basquete} alt="Garota meditando" className='ball'/>
+          <div className='content-description_text'>
+            <h1>Acompanhe todos os eventos que estão acontecendo</h1>
+            <p>Descubra o que está acontecendo na sua cidade! Nossa plataforma 
+              traz uma seleção dos melhores eventos ao seu redor, desde shows, 
+              festivais e palestras até workshops e atividades culturais. Não perca
+              a oportunidade de participar de eventos incríveis e conhecer novas pessoas.</p>
+          </div>
         </div>
       </div>
     </>
