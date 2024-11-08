@@ -1,5 +1,8 @@
 # **TripleSports**
 
+# **Para acessar o deploy:**
+https://triplesports.netlify.app/
+
 Este é um projeto desenvolvido com **React** que permite aos usuários se cadastrar e fazer login, realizar requisições em uma API de eventos, salvar eventos e visualizar apenas os eventos salvos através de um filtro. O projeto utiliza o **localStorage** para armazenar dados localmente no navegador.
 
 ## **Tabela de Conteúdos**
