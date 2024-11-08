@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# **TripleSports**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto desenvolvido com **React** que permite aos usuários se cadastrar e fazer login, realizar requisições em uma API de eventos, salvar eventos e visualizar apenas os eventos salvos através de um filtro. O projeto utiliza o **localStorage** para armazenar dados localmente no navegador.
 
-## Available Scripts
+## **Tabela de Conteúdos**
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Pré-Requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Como Usar](#como-usar)
+---
 
-In the project directory, you can run:
+## **Sobre o Projeto**
 
-### `npm start`
+Este projeto é um **site de rastreamento de eventos**, onde os usuários podem:
+- **Cadastrar-se** e **fazer login** no sistema.
+- Consultar uma lista de eventos obtida através de uma API externa.
+- **Salvar eventos** de interesse no localStorage.
+- Filtrar e visualizar apenas os **eventos salvos**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A aplicação utiliza o **localStorage** para armazenar os eventos salvos localmente, e o usuário pode acessar esses eventos mesmo após recarregar a página ou fechar o navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## **Funcionalidades**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Cadastro e Login de Usuário**: O usuário pode criar uma conta e realizar login, com os dados sendo armazenados no **localStorage**.
+- **Exibição de Eventos**: A lista de eventos é carregada a partir de uma API externa.
+- **Salvar Eventos**: O usuário pode salvar eventos em seu perfil.
+- **Filtragem de Eventos**: O usuário pode visualizar apenas os eventos salvos com um filtro.
+- **Uso de localStorage**: Dados como o estado de login e eventos salvos são armazenados no navegador do usuário, garantindo persistência de dados entre sessões.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Tecnologias Utilizadas**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+- **localStorage**: Armazenamento local para dados persistentes.
+- **CSS**: Estilização do layout e componentes.
+- **API de Eventos**: API externa para trazer os eventos em tempo real (substitua com a URL real da API que você está usando).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## **Pré-Requisitos**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Antes de rodar o projeto, é necessário ter as seguintes ferramentas instaladas no seu ambiente de desenvolvimento:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Node.js** (v12 ou superior)
+- **npm**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## **Instalação**
 
-## Learn More
+1. **Clone o repositório:**
+   ```bash
+   git clone git@github.com:VtaZinn/project-frontend.git
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Entre no diretório do projeto:
 
-### Code Splitting
+2. **Entre no diretório do projeto:**
+```
+cd projeto-frontend
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Instale as dependências:**
+Se você estiver usando o npm:
+```
+npm install
+```
+4. **Inicie o servidor de desenvolvimento:**
+ Se estiver usando o npm:
+```
+npm start
+```
 
-### Analyzing the Bundle Size
+Isso irá abrir o aplicativo no seu navegador, geralmente na URL http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Como usar:
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone o repositório** usando o comando `git clone` (substitua a URL pelo seu repositório).
+2. **Entre no diretório do projeto** com o comando `cd`.
+3. Instale as dependências com `npm install` ou `yarn install`.
+4. Inicie o servidor com `npm start` ou `yarn start` para rodar o aplicativo localmente.
