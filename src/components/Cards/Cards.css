@@ -108,6 +108,13 @@
   background-color: #E8E8E8;
 }
 
+@media (min-width: 320px) and (max-width: 530px) {
+  .content-cards_header {
+    flex-direction: column;
+  }
+
+}
+
 @media (max-width: 320px) { 
   .content-cards h1{
     font-size: 27px;
